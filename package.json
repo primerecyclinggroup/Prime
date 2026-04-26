@@ -1,0 +1,42 @@
+{
+  "name": "prime",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.5.0",
+    "postcss": "^8.5.12",
+    "tailwindcss": "^4.2.4",
+    "vite": "^8.0.10"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.2.4",
+    "baseline-browser-mapping": "^2.10.23",
+    "browserslist": "^4.28.2",
+    "caniuse-lite": "^1.0.30001791",
+    "detect-libc": "^2.1.2",
+    "electron-to-chromium": "^1.5.344",
+    "escalade": "^3.2.0",
+    "fdir": "^6.5.0",
+    "fraction.js": "^5.3.4",
+    "lightningcss": "^1.32.0",
+    "lightningcss-darwin-arm64": "^1.32.0",
+    "nanoid": "^3.3.11",
+    "node-releases": "^2.0.38",
+    "picocolors": "^1.1.1",
+    "picomatch": "^4.0.4",
+    "postcss-value-parser": "^4.2.0",
+    "rolldown": "^1.0.0-rc.17",
+    "source-map-js": "^1.2.1",
+    "tinyglobby": "^0.2.16",
+    "update-browserslist-db": "^1.2.3"
+  }
+}

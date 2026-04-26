@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@theme {
+  --color-prime-green: #22c55e;
+  --color-prime-black: #111827;
+  --color-prime-white: #ffffff;
+}
+
+@layer base {
+  body {
+    @apply text-prime-black bg-white;
+  }
+}
