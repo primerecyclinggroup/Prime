@@ -5,29 +5,51 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PRIME RECYCLING GROUP LIMITED | Cardboard Collection & Recycling Bolton</title>
-    <meta name="description" content="Professional cardboard collection and recycling services for businesses in Bolton, Greater Manchester. Fast, reliable, and competitive recycling solutions." />
+    <meta name="description" content="Professional cardboard collection and recycling services for businesses in Bolton, Greater Manchester, and North West England. Fast, reliable, and competitive recycling solutions for bulk cardboard." />
     <link rel="stylesheet" href="./src/style.css" />
   </head>
-  <body>
+  <body class="antialiased">
     <div id="app">
+      <!-- Sticky Mobile Call Button -->
+      <div class="md:hidden fixed bottom-6 right-6 z-[60]">
+        <a href="tel:07878895907" class="flex items-center justify-center w-16 h-16 bg-prime-green text-white rounded-full shadow-2xl animate-bounce border-4 border-white">
+          <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+          </svg>
+        </a>
+      </div>
+
+      <!-- Top Contact Bar -->
+      <div class="hidden md:block bg-prime-black text-white py-2 text-sm border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+          <div class="flex items-center space-x-6">
+            <span class="flex items-center"><svg class="w-4 h-4 mr-2 text-prime-green" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg> 07878 895907</span>
+            <span class="flex items-center"><svg class="w-4 h-4 mr-2 text-prime-green" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg> 07472 682725</span>
+          </div>
+          <div class="flex items-center text-gray-400">
+            Serving Bolton & Greater Manchester
+          </div>
+        </div>
+      </div>
+
       <!-- Navigation -->
-      <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
+      <nav class="sticky top-0 w-full z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="flex justify-between h-20">
             <div class="flex items-center">
-              <span class="text-2xl font-bold tracking-tighter text-prime-black">PRIME<span class="text-prime-green">RECYCLING</span></span>
+              <span class="text-2xl font-black tracking-tighter text-prime-black">PRIME<span class="text-prime-green">RECYCLING</span></span>
             </div>
             <div class="hidden md:flex items-center space-x-8">
-              <a href="#home" class="text-sm font-medium hover:text-prime-green transition-colors">Home</a>
-              <a href="#about" class="text-sm font-medium hover:text-prime-green transition-colors">About Us</a>
-              <a href="#services" class="text-sm font-medium hover:text-prime-green transition-colors">Services</a>
-              <a href="#contact" class="text-sm font-medium hover:text-prime-green transition-colors">Contact</a>
-              <a href="tel:07878895907" class="bg-prime-green text-white px-5 py-2.5 rounded-lg text-sm font-semibold hover:bg-prime-green/90 transition-all">Call Now</a>
+              <a href="#home" class="text-sm font-bold hover:text-prime-green transition-colors uppercase tracking-wider">Home</a>
+              <a href="#about" class="text-sm font-bold hover:text-prime-green transition-colors uppercase tracking-wider">About Us</a>
+              <a href="#services" class="text-sm font-bold hover:text-prime-green transition-colors uppercase tracking-wider">Services</a>
+              <a href="#contact" class="text-sm font-bold hover:text-prime-green transition-colors uppercase tracking-wider">Contact</a>
+              <a href="tel:07878895907" class="bg-prime-green text-white px-6 py-3 rounded-lg text-sm font-black hover:bg-prime-green/90 transition-all shadow-md active:scale-95 uppercase tracking-wider">Call Now</a>
             </div>
             <!-- Mobile menu button -->
             <div class="md:hidden flex items-center">
               <button type="button" class="text-prime-black p-2" onclick="toggleMenu()">
-                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
               </button>
@@ -35,32 +57,45 @@
           </div>
         </div>
         <!-- Mobile Navigation -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-gray-100">
-          <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <a href="#home" class="block px-3 py-2 text-base font-medium hover:bg-gray-50">Home</a>
-            <a href="#about" class="block px-3 py-2 text-base font-medium hover:bg-gray-50">About Us</a>
-            <a href="#services" class="block px-3 py-2 text-base font-medium hover:bg-gray-50">Services</a>
-            <a href="#contact" class="block px-3 py-2 text-base font-medium hover:bg-gray-50">Contact</a>
-            <a href="tel:07878895907" class="block px-3 py-2 text-base font-bold text-prime-green">Call Now</a>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-gray-100 shadow-xl">
+          <div class="px-4 pt-4 pb-6 space-y-2">
+            <a href="#home" class="block px-4 py-3 text-lg font-bold border-b border-gray-50" onclick="toggleMenu()">Home</a>
+            <a href="#about" class="block px-4 py-3 text-lg font-bold border-b border-gray-50" onclick="toggleMenu()">About Us</a>
+            <a href="#services" class="block px-4 py-3 text-lg font-bold border-b border-gray-50" onclick="toggleMenu()">Services</a>
+            <a href="#contact" class="block px-4 py-3 text-lg font-bold border-b border-gray-50" onclick="toggleMenu()">Contact</a>
+            <div class="pt-4 grid grid-cols-1 gap-4">
+              <a href="tel:07878895907" class="flex items-center justify-center bg-prime-green text-white py-4 rounded-xl text-xl font-black uppercase tracking-widest shadow-lg">Call: 07878 895907</a>
+              <a href="tel:07472682725" class="flex items-center justify-center bg-prime-black text-white py-4 rounded-xl text-xl font-black uppercase tracking-widest shadow-lg">Call: 07472 682725</a>
+            </div>
           </div>
         </div>
       </nav>
 
       <!-- Hero Section -->
-      <section id="home" class="pt-32 pb-20 md:pt-48 md:pb-32 bg-slate-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="max-w-3xl">
-            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight text-prime-black leading-[1.1]">
+      <section id="home" class="relative pt-20 pb-20 md:pt-40 md:pb-40 overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 z-0 bg-slate-50">
+          <div class="absolute inset-0 opacity-5 bg-[radial-gradient(#22c55e_1px,transparent_1px)] [background-size:24px_24px]"></div>
+        </div>
+        
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="max-w-4xl">
+            <div class="inline-flex items-center px-4 py-2 rounded-full bg-prime-green/10 text-prime-green font-bold text-sm mb-8 border border-prime-green/20">
+              <span class="flex h-2 w-2 rounded-full bg-prime-green mr-2 animate-pulse"></span>
+              Fast & Reliable Commercial Recycling in Bolton
+            </div>
+            <h1 class="text-6xl md:text-8xl font-black tracking-tight text-prime-black leading-[1] mb-8">
               Cardboard Collection & <span class="text-prime-green">Recycling</span> for Businesses in Bolton
             </h1>
-            <p class="mt-8 text-xl text-gray-600 leading-relaxed">
-              Fast, reliable, and professional cardboard waste management for warehouses, factories, and retail stores across Greater Manchester.
+            <p class="text-2xl md:text-3xl text-gray-600 leading-relaxed font-medium mb-12 max-w-2xl">
+              Fast, reliable collections for bulk cardboard waste across Bolton, Greater Manchester and the North West.
             </p>
-            <div class="mt-10 flex flex-col sm:flex-row gap-4">
-              <a href="tel:07878895907" class="inline-flex items-center justify-center px-8 py-4 border border-transparent text-base font-bold rounded-xl text-white bg-prime-black hover:bg-gray-800 transition-all shadow-lg">
-                Call Now: 07878 895907
+            <div class="flex flex-col sm:flex-row gap-6">
+              <a href="tel:07878895907" class="inline-flex items-center justify-center px-10 py-6 border border-transparent text-xl font-black rounded-2xl text-white bg-prime-green hover:bg-prime-green/90 transition-all shadow-[0_20px_50px_rgba(34,197,94,0.3)] active:scale-95 uppercase tracking-widest">
+                <svg class="w-6 h-6 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+                Call Now
               </a>
-              <a href="#contact" class="inline-flex items-center justify-center px-8 py-4 border-2 border-prime-green text-base font-bold rounded-xl text-prime-green hover:bg-prime-green hover:text-white transition-all">
+              <a href="#contact" class="inline-flex items-center justify-center px-10 py-6 border-4 border-prime-black text-xl font-black rounded-2xl text-prime-black hover:bg-prime-black hover:text-white transition-all active:scale-95 uppercase tracking-widest">
                 Get a Quote
               </a>
             </div>
@@ -68,167 +103,255 @@
         </div>
       </section>
 
-      <!-- How It Works -->
-      <section class="py-24 bg-white">
+      <!-- Trust Section -->
+      <section class="py-24 bg-white border-y border-gray-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="text-center mb-16">
-            <h2 class="text-3xl md:text-4xl font-bold text-prime-black">How It Works</h2>
-            <p class="mt-4 text-gray-600">Simple 3-step process to handle your business waste</p>
+            <h2 class="text-4xl md:text-5xl font-black text-prime-black mb-4">Trusted by Local Businesses</h2>
+            <div class="w-24 h-2 bg-prime-green mx-auto rounded-full"></div>
           </div>
-          <div class="grid md:grid-cols-3 gap-12">
-            <div class="text-center">
-              <div class="w-16 h-16 bg-prime-green/10 text-prime-green rounded-2xl flex items-center justify-center mx-auto mb-6 text-2xl font-bold">1</div>
-              <h3 class="text-xl font-bold mb-4">Contact Us</h3>
-              <p class="text-gray-600 leading-relaxed">Call us or fill out our online form to request a one-off or regular collection.</p>
+          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+            <div class="bg-slate-50 p-8 rounded-3xl text-center border border-transparent hover:border-prime-green/30 hover:bg-white hover:shadow-xl transition-all">
+              <div class="text-prime-green mb-4 flex justify-center"><svg class="w-12 h-12" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg></div>
+              <h4 class="font-black uppercase text-sm tracking-wider">Local Bolton Company</h4>
             </div>
-            <div class="text-center">
-              <div class="w-16 h-16 bg-prime-green/10 text-prime-green rounded-2xl flex items-center justify-center mx-auto mb-6 text-2xl font-bold">2</div>
-              <h3 class="text-xl font-bold mb-4">Collection</h3>
-              <p class="text-gray-600 leading-relaxed">Our professional team arrives at your site in Bolton to collect your bulk cardboard waste.</p>
+            <div class="bg-slate-50 p-8 rounded-3xl text-center border border-transparent hover:border-prime-green/30 hover:bg-white hover:shadow-xl transition-all">
+              <div class="text-prime-green mb-4 flex justify-center"><svg class="w-12 h-12" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg></div>
+              <h4 class="font-black uppercase text-sm tracking-wider">Fast Response Times</h4>
             </div>
-            <div class="text-center">
-              <div class="w-16 h-16 bg-prime-green/10 text-prime-green rounded-2xl flex items-center justify-center mx-auto mb-6 text-2xl font-bold">3</div>
-              <h3 class="text-xl font-bold mb-4">Recycling</h3>
-              <p class="text-gray-600 leading-relaxed">We process and recycle your cardboard efficiently, supporting your business's green goals.</p>
+            <div class="bg-slate-50 p-8 rounded-3xl text-center border border-transparent hover:border-prime-green/30 hover:bg-white hover:shadow-xl transition-all">
+              <div class="text-prime-green mb-4 flex justify-center"><svg class="w-12 h-12" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg></div>
+              <h4 class="font-black uppercase text-sm tracking-wider">Reliable Collections</h4>
+            </div>
+            <div class="bg-slate-50 p-8 rounded-3xl text-center border border-transparent hover:border-prime-green/30 hover:bg-white hover:shadow-xl transition-all">
+              <div class="text-prime-green mb-4 flex justify-center"><svg class="w-12 h-12" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg></div>
+              <h4 class="font-black uppercase text-sm tracking-wider">Competitive Rates</h4>
+            </div>
+            <div class="bg-slate-50 p-8 rounded-3xl text-center border border-transparent hover:border-prime-green/30 hover:bg-white hover:shadow-xl transition-all">
+              <div class="text-prime-green mb-4 flex justify-center"><svg class="w-12 h-12" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg></div>
+              <h4 class="font-black uppercase text-sm tracking-wider">Flexible Schedule</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- How It Works -->
+      <section class="py-32 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-24">
+            <h2 class="text-4xl md:text-6xl font-black text-prime-black mb-6 uppercase">How It Works</h2>
+            <p class="text-xl text-gray-600 font-medium max-w-2xl mx-auto">Simple, professional waste management in 3 steps</p>
+          </div>
+          <div class="grid md:grid-cols-3 gap-16 relative">
+            <!-- Connector Line -->
+            <div class="hidden lg:block absolute top-1/2 left-0 w-full h-1 bg-gray-200 -translate-y-1/2 z-0"></div>
+            
+            <div class="relative z-10 bg-white p-10 rounded-[3rem] shadow-xl border-t-8 border-prime-green text-center group hover:-translate-y-4 transition-all duration-300">
+              <div class="w-20 h-20 bg-prime-green text-white rounded-2xl flex items-center justify-center mx-auto mb-8 text-3xl font-black shadow-lg shadow-prime-green/30 group-hover:rotate-6 transition-transform">1</div>
+              <h3 class="text-2xl font-black mb-6 uppercase tracking-tight">Gather Cardboard</h3>
+              <p class="text-gray-600 leading-relaxed font-medium">Collect your waste cardboard in one accessible location at your warehouse or site.</p>
+            </div>
+            
+            <div class="relative z-10 bg-white p-10 rounded-[3rem] shadow-xl border-t-8 border-prime-black text-center group hover:-translate-y-4 transition-all duration-300">
+              <div class="w-20 h-20 bg-prime-black text-white rounded-2xl flex items-center justify-center mx-auto mb-8 text-3xl font-black shadow-lg shadow-black/30 group-hover:-rotate-6 transition-transform">2</div>
+              <h3 class="text-2xl font-black mb-6 uppercase tracking-tight">Rapid Collection</h3>
+              <p class="text-gray-600 leading-relaxed font-medium">We arrive promptly at your Bolton site to collect and load your cardboard professionally.</p>
+            </div>
+            
+            <div class="relative z-10 bg-white p-10 rounded-[3rem] shadow-xl border-t-8 border-prime-green text-center group hover:-translate-y-4 transition-all duration-300">
+              <div class="w-20 h-20 bg-prime-green text-white rounded-2xl flex items-center justify-center mx-auto mb-8 text-3xl font-black shadow-lg shadow-prime-green/30 group-hover:rotate-6 transition-transform">3</div>
+              <h3 class="text-2xl font-black mb-6 uppercase tracking-tight">Recycle & Pay</h3>
+              <p class="text-gray-600 leading-relaxed font-medium">We recycle your loads efficiently, and for bulk loads, we provide competitive payouts.</p>
+            </div>
+          </div>
+          
+          <div class="mt-20 text-center">
+            <a href="tel:07878895907" class="inline-flex items-center justify-center bg-prime-green text-white px-12 py-6 rounded-2xl text-2xl font-black shadow-2xl hover:bg-prime-green/90 transition-all active:scale-95 uppercase tracking-widest">
+              Arrange a Collection Now
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section id="services" class="py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid lg:grid-cols-2 gap-20 items-center">
+            <div>
+              <h2 class="text-5xl md:text-7xl font-black text-prime-black leading-[1.1] mb-10 uppercase">
+                Specialised Solutions for <span class="text-prime-green">Commercial</span> Sites
+              </h2>
+              <p class="text-xl text-gray-600 font-medium mb-12 leading-relaxed">
+                We focus on the needs of Bolton's commercial sector, providing services that help you run a more efficient operation.
+              </p>
+              <div class="space-y-8">
+                <div class="flex items-start bg-slate-50 p-8 rounded-3xl border-l-8 border-prime-green">
+                  <div class="ml-2">
+                    <h4 class="text-xl font-black uppercase mb-2">Save Time & Space</h4>
+                    <p class="text-gray-600 font-medium">Clear your floor space quickly and let our team handle the loading and removal.</p>
+                  </div>
+                </div>
+                <div class="flex items-start bg-slate-50 p-8 rounded-3xl border-l-8 border-prime-black">
+                  <div class="ml-2">
+                    <h4 class="text-xl font-black uppercase mb-2">Reliable Pickups</h4>
+                    <p class="text-gray-600 font-medium">Never be left with piles of waste. Our scheduled collections are guaranteed and punctual.</p>
+                  </div>
+                </div>
+                <div class="flex items-start bg-slate-50 p-8 rounded-3xl border-l-8 border-prime-green">
+                  <div class="ml-2">
+                    <h4 class="text-xl font-black uppercase mb-2">Bulk Load Specialists</h4>
+                    <p class="text-gray-600 font-medium">Specifically designed for warehouses, factories, and retail distribution centers.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="grid grid-cols-1 gap-8">
+              <div class="bg-prime-black text-white p-12 rounded-[3rem] shadow-2xl relative overflow-hidden group">
+                <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-prime-green rounded-full blur-3xl opacity-20 group-hover:opacity-40 transition-opacity"></div>
+                <h3 class="text-3xl font-black mb-6 text-prime-green uppercase tracking-tight">Cardboard Collection</h3>
+                <p class="text-gray-300 text-lg leading-relaxed font-medium mb-8">Professional collection services for all business types in Bolton and Greater Manchester. One-off or regular.</p>
+                <a href="tel:07878895907" class="text-white font-black uppercase tracking-widest border-b-2 border-prime-green pb-2 hover:text-prime-green transition-colors">Call to Book</a>
+              </div>
+              <div class="bg-slate-100 p-12 rounded-[3rem] shadow-xl relative overflow-hidden group border border-gray-200">
+                <h3 class="text-3xl font-black mb-6 text-prime-black uppercase tracking-tight">Bulk Recycling</h3>
+                <p class="text-gray-600 text-lg leading-relaxed font-medium mb-8">We pay competitive rates for bulk cardboard loads. Perfect for industrial units and large warehouses.</p>
+                <a href="tel:07472682725" class="text-prime-black font-black uppercase tracking-widest border-b-2 border-prime-black pb-2 hover:text-prime-green transition-colors">Inquire About Payouts</a>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       <!-- Why Choose Us -->
-      <section id="about" class="py-24 bg-prime-black text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="grid md:grid-cols-2 gap-16 items-center">
+      <section id="about" class="py-32 bg-prime-black text-white relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-1/2 h-full bg-prime-green/5 -skew-x-12 translate-x-1/2"></div>
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid md:grid-cols-2 gap-20 items-center">
             <div>
-              <h2 class="text-4xl font-bold mb-8">Why Choose <span class="text-prime-green">Prime Recycling</span>?</h2>
-              <ul class="space-y-6">
-                <li class="flex items-start">
-                  <svg class="h-6 w-6 text-prime-green mr-4 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
-                  <div>
-                    <h4 class="font-bold text-lg">Local & Reliable</h4>
-                    <p class="text-gray-400">Based in Bolton, we provide prompt service across the North West.</p>
-                  </div>
-                </li>
-                <li class="flex items-start">
-                  <svg class="h-6 w-6 text-prime-green mr-4 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
-                  <div>
-                    <h4 class="font-bold text-lg">Fast Response</h4>
-                    <p class="text-gray-400">We understand business needs and offer rapid collection turnaround.</p>
-                  </div>
-                </li>
-                <li class="flex items-start">
-                  <svg class="h-6 w-6 text-prime-green mr-4 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
-                  <div>
-                    <h4 class="font-bold text-lg">Competitive Pricing</h4>
-                    <p class="text-gray-400">Professional service at rates that make sense for your bottom line.</p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="bg-gray-800 p-8 rounded-3xl border border-gray-700">
-              <h3 class="text-2xl font-bold mb-4 text-prime-green">About Us</h3>
-              <p class="text-gray-300 leading-relaxed mb-6">
-                PRIME RECYCLING GROUP LIMITED is a dedicated commercial waste solution provider. We specialise in helping businesses in Bolton and surrounding areas manage their cardboard waste sustainably and efficiently.
+              <h2 class="text-5xl md:text-7xl font-black mb-12 uppercase leading-[1.1]">Serving <span class="text-prime-green">Bolton</span> & The North West</h2>
+              <p class="text-xl text-gray-400 font-medium leading-relaxed mb-10">
+                PRIME RECYCLING GROUP LIMITED is Bolton's premier commercial waste partner. We understand the logistics of the North West and provide a level of service that national companies can't match.
               </p>
-              <p class="text-gray-300 leading-relaxed">
-                From small retail shops to large-scale warehouses, we provide tailored solutions that ensure your waste is handled professionally and recycled properly.
+              <div class="grid grid-cols-2 gap-8">
+                <div>
+                  <div class="text-4xl font-black text-prime-green mb-2">100%</div>
+                  <div class="text-sm font-bold uppercase tracking-widest text-gray-500">Local Reliability</div>
+                </div>
+                <div>
+                  <div class="text-4xl font-black text-prime-green mb-2">FAST</div>
+                  <div class="text-sm font-bold uppercase tracking-widest text-gray-500">Same/Next Day</div>
+                </div>
+              </div>
+            </div>
+            <div class="bg-gray-900 p-12 rounded-[3rem] border border-gray-800 shadow-3xl">
+              <h3 class="text-3xl font-black mb-8 text-prime-green uppercase tracking-tight">Our Commitment</h3>
+              <p class="text-gray-400 text-lg leading-relaxed font-medium mb-8">
+                We are committed to helping Bolton businesses reduce their environmental impact while saving money on waste disposal. Our industrial-grade equipment and professional fleet ensure every job is handled with the highest standards of safety and efficiency.
               </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Services Section -->
-      <section id="services" class="py-24 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="text-center mb-16">
-            <h2 class="text-3xl md:text-4xl font-bold text-prime-black">Our Services</h2>
-            <p class="mt-4 text-gray-600">Tailored recycling solutions for every business</p>
-          </div>
-          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div class="p-8 border border-gray-100 rounded-2xl hover:shadow-xl transition-all">
-              <h3 class="font-bold text-xl mb-4">Cardboard Collection</h3>
-              <p class="text-gray-600 text-sm">Regular or one-off collections of all types of business cardboard waste.</p>
-            </div>
-            <div class="p-8 border border-gray-100 rounded-2xl hover:shadow-xl transition-all">
-              <h3 class="font-bold text-xl mb-4">Bulk Recycling</h3>
-              <p class="text-gray-600 text-sm">Specialised solutions for large volumes of cardboard from warehouses and factories.</p>
-            </div>
-            <div class="p-8 border border-gray-100 rounded-2xl hover:shadow-xl transition-all">
-              <h3 class="font-bold text-xl mb-4">Commercial Solutions</h3>
-              <p class="text-gray-600 text-sm">Complete waste management consultancy for commercial properties.</p>
-            </div>
-            <div class="p-8 border border-gray-100 rounded-2xl hover:shadow-xl transition-all">
-              <h3 class="font-bold text-xl mb-4">Flexible Schedule</h3>
-              <p class="text-gray-600 text-sm">We work around your business hours to ensure minimal disruption.</p>
+              <a href="#contact" class="inline-flex items-center justify-center bg-white text-prime-black px-8 py-4 rounded-xl font-black uppercase tracking-widest hover:bg-prime-green hover:text-white transition-all shadow-lg active:scale-95">Get Started Today</a>
             </div>
           </div>
         </div>
       </section>
 
       <!-- Contact Section -->
-      <section id="contact" class="py-24 bg-slate-50">
+      <section id="contact" class="py-32 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="grid lg:grid-cols-2 gap-16">
+          <div class="grid lg:grid-cols-2 gap-24">
             <div>
-              <h2 class="text-4xl font-bold text-prime-black mb-8">Contact Us</h2>
-              <p class="text-lg text-gray-600 mb-12">Get in touch today for a free quote or to arrange a collection.</p>
+              <h2 class="text-6xl font-black text-prime-black mb-10 uppercase tracking-tighter">Contact Us</h2>
+              <p class="text-2xl text-gray-600 mb-16 font-medium">Get a free quote or arrange a collection today.</p>
               
-              <div class="space-y-8">
-                <div class="flex items-start">
-                  <div class="flex-shrink-0 w-12 h-12 bg-prime-green/10 text-prime-green rounded-xl flex items-center justify-center">
-                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+              <div class="space-y-12">
+                <div class="flex items-start group">
+                  <div class="flex-shrink-0 w-16 h-16 bg-prime-green text-white rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                    <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
                   </div>
-                  <div class="ml-6">
-                    <h4 class="font-bold text-lg">Address</h4>
-                    <p class="text-gray-600 mt-1">
+                  <div class="ml-8">
+                    <h4 class="font-black text-xl uppercase tracking-tight mb-4">Our Bolton Office</h4>
+                    <p class="text-gray-600 text-xl font-medium leading-relaxed">
                       PRIME RECYCLING GROUP LIMITED<br>
                       Unit 8 Pike Nook Workshops<br>
                       High Street, Bolton<br>
-                      BL3 6JZ, UK
+                      BL3 6JZ, United Kingdom
                     </p>
-                    <a href="https://www.google.com/maps/dir/?api=1&destination=BL3+6JZ" target="_blank" class="text-prime-green font-bold text-sm mt-2 inline-block hover:underline">Get Directions</a>
+                    <a href="https://www.google.com/maps/dir/?api=1&destination=BL3+6JZ" target="_blank" class="inline-flex items-center text-prime-green font-black text-lg mt-6 hover:underline uppercase tracking-widest">
+                      Get Directions 
+                      <svg class="w-5 h-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+                    </a>
                   </div>
                 </div>
 
-                <div class="flex items-start">
-                  <div class="flex-shrink-0 w-12 h-12 bg-prime-green/10 text-prime-green rounded-xl flex items-center justify-center">
-                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+                <div class="flex items-start group">
+                  <div class="flex-shrink-0 w-16 h-16 bg-prime-black text-white rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                    <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
                   </div>
-                  <div class="ml-6">
-                    <h4 class="font-bold text-lg">Phone</h4>
-                    <div class="mt-1 space-y-2">
-                      <a href="tel:07878895907" class="block text-gray-600 hover:text-prime-green font-medium">07878 895907</a>
-                      <a href="tel:07472682725" class="block text-gray-600 hover:text-prime-green font-medium">07472 682725</a>
+                  <div class="ml-8">
+                    <h4 class="font-black text-xl uppercase tracking-tight mb-4">Direct Lines</h4>
+                    <div class="space-y-6">
+                      <a href="tel:07878895907" class="block text-gray-800 hover:text-prime-green text-3xl font-black transition-colors tracking-tight">07878 895907</a>
+                      <a href="tel:07472682725" class="block text-gray-800 hover:text-prime-green text-3xl font-black transition-colors tracking-tight">07472 682725</a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="rounded-3xl overflow-hidden shadow-2xl border-4 border-white h-[400px] lg:h-auto min-h-[400px]">
-              <iframe 
-                width="100%" 
-                height="100%" 
-                frameborder="0" 
-                scrolling="no" 
-                marginheight="0" 
-                marginwidth="0" 
-                src="https://maps.google.com/maps?q=BL3%206JZ&t=&z=15&ie=UTF8&iwloc=&output=embed">
-              </iframe>
+            <div class="relative">
+              <div class="absolute inset-0 bg-prime-green rounded-[4rem] rotate-3 translate-x-4 translate-y-4 -z-10"></div>
+              <div class="rounded-[3rem] overflow-hidden shadow-2xl border-8 border-white h-full min-h-[500px] z-10">
+                <iframe 
+                  width="100%" 
+                  height="100%" 
+                  frameborder="0" 
+                  scrolling="no" 
+                  marginheight="0" 
+                  marginwidth="0" 
+                  src="https://maps.google.com/maps?q=BL3%206JZ&t=&z=15&ie=UTF8&iwloc=&output=embed">
+                </iframe>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       <!-- Footer -->
-      <footer class="bg-white py-12 border-t border-gray-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
-          <div class="text-xl font-bold tracking-tighter text-prime-black mb-4 md:mb-0">
-            PRIME<span class="text-prime-green">RECYCLING</span>
+      <footer class="bg-prime-black text-white pt-24 pb-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid md:grid-cols-3 gap-16 mb-20">
+            <div>
+              <div class="text-3xl font-black tracking-tighter text-white mb-8">
+                PRIME<span class="text-prime-green">RECYCLING</span>
+              </div>
+              <p class="text-gray-400 font-medium leading-relaxed">
+                Providing professional cardboard collection and recycling solutions across Bolton, Greater Manchester, and North West England.
+              </p>
+            </div>
+            <div>
+              <h4 class="text-lg font-black uppercase tracking-widest text-prime-green mb-8">Our Location</h4>
+              <p class="text-gray-400 font-medium leading-relaxed">
+                Unit 8 Pike Nook Workshops<br>
+                High Street, Bolton<br>
+                BL3 6JZ, United Kingdom
+              </p>
+            </div>
+            <div>
+              <h4 class="text-lg font-black uppercase tracking-widest text-prime-green mb-8">Quick Links</h4>
+              <ul class="space-y-4">
+                <li><a href="#home" class="text-gray-400 hover:text-white font-bold transition-colors">Home</a></li>
+                <li><a href="#about" class="text-gray-400 hover:text-white font-bold transition-colors">About Us</a></li>
+                <li><a href="#services" class="text-gray-400 hover:text-white font-bold transition-colors">Services</a></li>
+                <li><a href="#contact" class="text-gray-400 hover:text-white font-bold transition-colors">Contact</a></li>
+              </ul>
+            </div>
           </div>
-          <div class="text-gray-500 text-sm">
-            © 2026 PRIME RECYCLING GROUP LIMITED. Registered in England & Wales.
+          <div class="pt-12 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center text-center gap-6">
+            <div class="text-gray-500 text-sm font-bold uppercase tracking-widest">
+              © 2026 PRIME RECYCLING GROUP LIMITED. Registered in England & Wales.
+            </div>
+            <div class="text-prime-green font-black uppercase tracking-widest text-sm">
+              Serving Bolton & Surrounding Areas
+            </div>
           </div>
         </div>
       </footer>
