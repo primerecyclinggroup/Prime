@@ -1,6 +1,7 @@
 import './style.css'
 
 const PRIMARY_PHONE_NUMBER = '07878895907'
+const RECIPIENT_EMAIL = 'primerecyclinggroup@gmail.com'
 
 function buildEnquiryBody(fields) {
   const lines = [
@@ -19,16 +20,6 @@ function buildEnquiryBody(fields) {
   return lines.join('\n')
 }
 
-async function copyToClipboard(text) {
-  if (!navigator.clipboard?.writeText) return false
-  try {
-    await navigator.clipboard.writeText(text)
-    return true
-  } catch {
-    return false
-  }
-}
-
 function initEnquiryForm() {
   const form = document.querySelector('#enquiry-form')
   if (!(form instanceof HTMLFormElement)) return
@@ -41,7 +32,7 @@ function initEnquiryForm() {
     statusEl.classList.remove('hidden')
   }
 
-  form.addEventListener('submit', async (event) => {
+  form.addEventListener('submit', (event) => {
     event.preventDefault()
 
     const getValue = (name) => {
@@ -60,16 +51,14 @@ function initEnquiryForm() {
     }
 
     const body = buildEnquiryBody(fields)
-    const copied = await copyToClipboard(body)
 
-    const email = typeof form.dataset.email === 'string' ? form.dataset.email.trim() : ''
+    const emailFromDataset = typeof form.dataset.email === 'string' ? form.dataset.email.trim() : ''
+    const email = emailFromDataset.length ? emailFromDataset : RECIPIENT_EMAIL
     const subject = 'Cardboard Collection Enquiry'
     const mailto = `mailto:${encodeURIComponent(email)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
 
     setStatus(
-      copied
-        ? `Details copied. Your email app will open now. If it doesn’t, paste the copied message into an email or call ${PRIMARY_PHONE_NUMBER}.`
-        : `Your email app will open now. If it doesn’t, please call ${PRIMARY_PHONE_NUMBER}.`
+      `Your email app should open with the enquiry pre-filled. If it doesn’t, email ${email} or call ${PRIMARY_PHONE_NUMBER}.`
     )
 
     window.location.href = mailto
