@@ -23,8 +23,8 @@
       <div class="hidden md:block bg-prime-black text-white py-2 text-sm border-b border-gray-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
           <div class="flex items-center space-x-6">
-            <span class="flex items-center"><svg class="w-4 h-4 mr-2 text-prime-green" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg> 07878 895907</span>
-            <span class="flex items-center"><svg class="w-4 h-4 mr-2 text-prime-green" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg> 07472 682725</span>
+            <a href="tel:07878895907" class="flex items-center hover:text-prime-green transition-colors"><svg class="w-4 h-4 mr-2 text-prime-green" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg> <span class="font-black tracking-wide">Call: 07878 895907</span></a>
+            <a href="tel:07472682725" class="flex items-center text-gray-300 hover:text-prime-green transition-colors"><span class="font-bold uppercase tracking-widest text-[11px] mr-2">Alt</span> 07472 682725</a>
           </div>
           <div class="flex items-center text-gray-400">
             Serving Bolton & Greater Manchester
@@ -65,7 +65,7 @@
             <a href="#contact" class="block px-4 py-3 text-lg font-bold border-b border-gray-50" onclick="toggleMenu()">Contact</a>
             <div class="pt-4 grid grid-cols-1 gap-4">
               <a href="tel:07878895907" class="flex items-center justify-center bg-prime-green text-white py-4 rounded-xl text-xl font-black uppercase tracking-widest shadow-lg">Call: 07878 895907</a>
-              <a href="tel:07472682725" class="flex items-center justify-center bg-prime-black text-white py-4 rounded-xl text-xl font-black uppercase tracking-widest shadow-lg">Call: 07472 682725</a>
+              <a href="tel:07472682725" class="flex items-center justify-center bg-white text-prime-black py-4 rounded-xl text-xl font-black uppercase tracking-widest shadow-lg border-4 border-prime-black">Alternative: 07472 682725</a>
             </div>
           </div>
         </div>
@@ -79,7 +79,8 @@
         </div>
         
         <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="max-w-4xl">
+          <div class="grid lg:grid-cols-12 gap-16 items-center">
+            <div class="lg:col-span-7">
             <div class="inline-flex items-center px-4 py-2 rounded-full bg-prime-green/10 text-prime-green font-bold text-sm mb-8 border border-prime-green/20">
               <span class="flex h-2 w-2 rounded-full bg-prime-green mr-2 animate-pulse"></span>
               Fast & Reliable Commercial Recycling in Bolton
@@ -110,10 +111,8 @@
                 <a href="tel:07878895907" class="inline-flex items-center font-black text-prime-black hover:text-prime-green transition-colors">
                   <span class="text-sm uppercase tracking-widest text-gray-500 mr-2">Call</span> 07878 895907
                 </a>
-                <span class="text-gray-300 font-black">/</span>
-                <a href="tel:07472682725" class="inline-flex items-center font-black text-prime-black hover:text-prime-green transition-colors">
-                  <span class="text-sm uppercase tracking-widest text-gray-500 mr-2">Call</span> 07472 682725
-                </a>
+                <span class="text-gray-400 font-bold">Alternative:</span>
+                <a href="tel:07472682725" class="inline-flex items-center font-bold text-gray-700 hover:text-prime-green transition-colors">07472 682725</a>
               </div>
             </div>
             <div class="flex flex-col sm:flex-row gap-6">
@@ -124,6 +123,20 @@
               <a href="#contact" class="inline-flex items-center justify-center px-10 py-6 border-4 border-prime-black text-xl font-black rounded-2xl text-prime-black hover:bg-prime-black hover:text-white transition-all active:scale-95 uppercase tracking-widest">
                 Get a Quote
               </a>
+            </div>
+            </div>
+            <div class="lg:col-span-5">
+              <div class="relative">
+                <div class="absolute -inset-6 bg-prime-green rounded-[4rem] rotate-2 opacity-15"></div>
+                <div class="relative bg-white rounded-[3rem] border border-gray-200 shadow-2xl overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1604328698692-f76ea9498e76?auto=format&fit=crop&w=1200&q=80" alt="Industrial warehouse loading area" class="w-full h-[420px] object-cover" loading="lazy" />
+                  <div class="absolute inset-0 bg-gradient-to-t from-prime-black/70 via-prime-black/10 to-transparent"></div>
+                  <div class="absolute bottom-0 left-0 right-0 p-8">
+                    <div class="text-white font-black text-xl uppercase tracking-widest">Industrial Collections</div>
+                    <div class="text-gray-200 font-medium mt-2">Bulk cardboard pickups for warehouses and commercial sites in Bolton & Greater Manchester.</div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -195,6 +208,70 @@
         </div>
       </section>
 
+      <!-- What We Collect -->
+      <section class="py-28 bg-slate-50 border-y border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid lg:grid-cols-12 gap-16 items-start">
+            <div class="lg:col-span-5">
+              <h2 class="text-4xl md:text-6xl font-black text-prime-black mb-6 uppercase tracking-tight">What We Collect</h2>
+              <p class="text-xl text-gray-600 font-medium leading-relaxed">
+                If it’s commercial cardboard, we can usually collect it. We handle loose loads and bulk volumes from businesses across Bolton and the North West.
+              </p>
+              <div class="mt-10">
+                <a href="tel:07878895907" class="inline-flex items-center justify-center bg-prime-green text-white px-10 py-5 rounded-2xl text-xl font-black shadow-2xl hover:bg-prime-green/90 transition-all active:scale-95 uppercase tracking-widest">Call to Arrange Collection</a>
+              </div>
+            </div>
+            <div class="lg:col-span-7">
+              <div class="grid sm:grid-cols-2 gap-8">
+                <div class="bg-white p-10 rounded-[3rem] border border-gray-200 shadow-xl">
+                  <div class="w-12 h-12 rounded-2xl bg-prime-green text-white flex items-center justify-center font-black text-lg mb-6">✓</div>
+                  <h3 class="text-xl font-black uppercase tracking-wider mb-3">Loose Cardboard</h3>
+                  <p class="text-gray-600 font-medium leading-relaxed">Boxes, flats, and mixed loose loads from packing areas and stock rooms.</p>
+                </div>
+                <div class="bg-white p-10 rounded-[3rem] border border-gray-200 shadow-xl">
+                  <div class="w-12 h-12 rounded-2xl bg-prime-black text-white flex items-center justify-center font-black text-lg mb-6">✓</div>
+                  <h3 class="text-xl font-black uppercase tracking-wider mb-3">Baled Cardboard</h3>
+                  <p class="text-gray-600 font-medium leading-relaxed">Baled loads from high-volume sites and distribution centres.</p>
+                </div>
+                <div class="bg-white p-10 rounded-[3rem] border border-gray-200 shadow-xl">
+                  <div class="w-12 h-12 rounded-2xl bg-prime-green text-white flex items-center justify-center font-black text-lg mb-6">✓</div>
+                  <h3 class="text-xl font-black uppercase tracking-wider mb-3">Packaging Waste</h3>
+                  <p class="text-gray-600 font-medium leading-relaxed">Commercial packaging waste and clean recyclable cardboard materials.</p>
+                </div>
+                <div class="bg-white p-10 rounded-[3rem] border border-gray-200 shadow-xl">
+                  <div class="w-12 h-12 rounded-2xl bg-prime-black text-white flex items-center justify-center font-black text-lg mb-6">✓</div>
+                  <h3 class="text-xl font-black uppercase tracking-wider mb-3">Bulk Commercial Cardboard</h3>
+                  <p class="text-gray-600 font-medium leading-relaxed">Large volumes from warehouses, factories, and industrial units across Greater Manchester.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Service Areas -->
+      <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-6xl font-black text-prime-black mb-6 uppercase tracking-tight">Service Areas</h2>
+            <p class="text-xl text-gray-600 font-medium max-w-3xl mx-auto">Local collections across Greater Manchester and surrounding North West areas.</p>
+          </div>
+          <div class="flex flex-wrap justify-center gap-4">
+            <span class="px-6 py-3 rounded-full bg-slate-50 border border-gray-200 font-black uppercase tracking-widest text-sm">Bolton</span>
+            <span class="px-6 py-3 rounded-full bg-slate-50 border border-gray-200 font-black uppercase tracking-widest text-sm">Manchester</span>
+            <span class="px-6 py-3 rounded-full bg-slate-50 border border-gray-200 font-black uppercase tracking-widest text-sm">Bury</span>
+            <span class="px-6 py-3 rounded-full bg-slate-50 border border-gray-200 font-black uppercase tracking-widest text-sm">Wigan</span>
+            <span class="px-6 py-3 rounded-full bg-slate-50 border border-gray-200 font-black uppercase tracking-widest text-sm">Salford</span>
+            <span class="px-6 py-3 rounded-full bg-slate-50 border border-gray-200 font-black uppercase tracking-widest text-sm">Oldham</span>
+            <span class="px-6 py-3 rounded-full bg-slate-50 border border-gray-200 font-black uppercase tracking-widest text-sm">Rochdale</span>
+            <span class="px-6 py-3 rounded-full bg-slate-50 border border-gray-200 font-black uppercase tracking-widest text-sm">North West Areas</span>
+          </div>
+          <div class="mt-12 text-center">
+            <a href="tel:07878895907" class="inline-flex items-center justify-center bg-prime-black text-white px-10 py-5 rounded-2xl text-xl font-black shadow-2xl hover:bg-prime-black/90 transition-all active:scale-95 uppercase tracking-widest">Call for Coverage</a>
+          </div>
+        </div>
+      </section>
+
       <!-- How It Works -->
       <section class="py-32 bg-slate-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -220,8 +297,8 @@
             
             <div class="relative z-10 bg-white p-10 rounded-[3rem] shadow-xl border-t-8 border-prime-green text-center group hover:-translate-y-4 transition-all duration-300">
               <div class="w-20 h-20 bg-prime-green text-white rounded-2xl flex items-center justify-center mx-auto mb-8 text-3xl font-black shadow-lg shadow-prime-green/30 group-hover:rotate-6 transition-transform">3</div>
-              <h3 class="text-2xl font-black mb-6 uppercase tracking-tight">Recycle & Pay</h3>
-              <p class="text-gray-600 leading-relaxed font-medium">We recycle your loads efficiently, and for bulk loads, we provide competitive payouts.</p>
+              <h3 class="text-2xl font-black mb-6 uppercase tracking-tight">Recycle / Payouts for Bulk Loads</h3>
+              <p class="text-gray-600 leading-relaxed font-medium">We recycle your cardboard efficiently. For qualifying bulk loads, we offer competitive payouts.</p>
             </div>
           </div>
           
@@ -246,8 +323,7 @@
                 </p>
                 <div class="mt-8 flex flex-wrap items-center gap-6">
                   <a href="tel:07878895907" class="text-2xl md:text-3xl font-black hover:text-prime-green transition-colors">07878 895907</a>
-                  <span class="text-gray-600 font-black">/</span>
-                  <a href="tel:07472682725" class="text-2xl md:text-3xl font-black hover:text-prime-green transition-colors">07472 682725</a>
+                  <div class="text-gray-400 font-bold uppercase tracking-widest text-xs">Alternative: <a href="tel:07472682725" class="hover:text-prime-green transition-colors">07472 682725</a></div>
                 </div>
               </div>
               <div class="flex lg:justify-end">
@@ -347,7 +423,63 @@
           <div class="grid lg:grid-cols-2 gap-24">
             <div>
               <h2 class="text-6xl font-black text-prime-black mb-10 uppercase tracking-tighter">Contact Us</h2>
-              <p class="text-2xl text-gray-600 mb-16 font-medium">Get a free quote or arrange a collection today.</p>
+              <p class="text-2xl text-gray-600 mb-12 font-medium">Get a quote or arrange a fast collection in Bolton and Greater Manchester.</p>
+
+              <div class="bg-slate-50 border border-gray-200 rounded-[3rem] p-10 shadow-xl mb-12">
+                <div class="text-sm font-black uppercase tracking-widest text-gray-500">Primary phone</div>
+                <a href="tel:07878895907" class="block mt-2 text-4xl font-black text-prime-black hover:text-prime-green transition-colors tracking-tight">07878 895907</a>
+                <div class="mt-4 text-sm font-bold uppercase tracking-widest text-gray-600">Alternative number: <a href="tel:07472682725" class="hover:text-prime-green transition-colors">07472 682725</a></div>
+                <div class="mt-8 flex flex-col sm:flex-row gap-4">
+                  <a href="tel:07878895907" class="inline-flex items-center justify-center bg-prime-green text-white px-8 py-4 rounded-2xl text-xl font-black shadow-lg hover:bg-prime-green/90 transition-all active:scale-95 uppercase tracking-widest">Call Now</a>
+                  <a href="#enquiry" class="inline-flex items-center justify-center bg-white text-prime-black px-8 py-4 rounded-2xl text-xl font-black shadow-lg border-4 border-prime-black hover:bg-prime-black hover:text-white transition-all active:scale-95 uppercase tracking-widest">Get a Quote</a>
+                </div>
+              </div>
+
+              <div id="enquiry" class="bg-white border border-gray-200 rounded-[3rem] p-10 shadow-2xl mb-12">
+                <h3 class="text-3xl font-black text-prime-black mb-3 uppercase tracking-tight">Enquiry Form</h3>
+                <p class="text-gray-600 font-medium mb-10">Send your details and we’ll respond quickly.</p>
+                <form id="enquiry-form" data-email="" class="space-y-6">
+                  <div class="grid sm:grid-cols-2 gap-6">
+                    <div>
+                      <label class="block text-sm font-black uppercase tracking-widest text-gray-600 mb-2" for="name">Name</label>
+                      <input id="name" name="name" required class="w-full rounded-2xl border border-gray-200 bg-slate-50 px-5 py-4 font-medium focus:outline-none focus:ring-4 focus:ring-prime-green/20 focus:border-prime-green" />
+                    </div>
+                    <div>
+                      <label class="block text-sm font-black uppercase tracking-widest text-gray-600 mb-2" for="business">Business name</label>
+                      <input id="business" name="business" required class="w-full rounded-2xl border border-gray-200 bg-slate-50 px-5 py-4 font-medium focus:outline-none focus:ring-4 focus:ring-prime-green/20 focus:border-prime-green" />
+                    </div>
+                  </div>
+                  <div class="grid sm:grid-cols-2 gap-6">
+                    <div>
+                      <label class="block text-sm font-black uppercase tracking-widest text-gray-600 mb-2" for="phone">Phone number</label>
+                      <input id="phone" name="phone" required inputmode="tel" class="w-full rounded-2xl border border-gray-200 bg-slate-50 px-5 py-4 font-medium focus:outline-none focus:ring-4 focus:ring-prime-green/20 focus:border-prime-green" />
+                    </div>
+                    <div>
+                      <label class="block text-sm font-black uppercase tracking-widest text-gray-600 mb-2" for="location">Location</label>
+                      <input id="location" name="location" required placeholder="e.g. Bolton / Manchester" class="w-full rounded-2xl border border-gray-200 bg-slate-50 px-5 py-4 font-medium focus:outline-none focus:ring-4 focus:ring-prime-green/20 focus:border-prime-green" />
+                    </div>
+                  </div>
+                  <div>
+                    <label class="block text-sm font-black uppercase tracking-widest text-gray-600 mb-2" for="volume">Approximate cardboard volume</label>
+                    <select id="volume" name="volume" required class="w-full rounded-2xl border border-gray-200 bg-slate-50 px-5 py-4 font-medium focus:outline-none focus:ring-4 focus:ring-prime-green/20 focus:border-prime-green">
+                      <option value="" disabled selected>Select volume</option>
+                      <option>Small (a few bags/boxes)</option>
+                      <option>Medium (daily boxes / regular waste)</option>
+                      <option>Large (bulk loads / pallets / bales)</option>
+                      <option>Not sure</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label class="block text-sm font-black uppercase tracking-widest text-gray-600 mb-2" for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required class="w-full rounded-2xl border border-gray-200 bg-slate-50 px-5 py-4 font-medium focus:outline-none focus:ring-4 focus:ring-prime-green/20 focus:border-prime-green"></textarea>
+                  </div>
+                  <div class="flex flex-col sm:flex-row gap-4">
+                    <button type="submit" class="inline-flex items-center justify-center bg-prime-green text-white px-8 py-4 rounded-2xl text-xl font-black shadow-lg hover:bg-prime-green/90 transition-all active:scale-95 uppercase tracking-widest">Submit Enquiry</button>
+                    <a href="tel:07878895907" class="inline-flex items-center justify-center bg-prime-black text-white px-8 py-4 rounded-2xl text-xl font-black shadow-lg hover:bg-prime-black/90 transition-all active:scale-95 uppercase tracking-widest">Or Call Now</a>
+                  </div>
+                  <div id="enquiry-status" class="hidden mt-4 text-sm font-bold text-gray-600"></div>
+                </form>
+              </div>
               
               <div class="space-y-12">
                 <div class="flex items-start group">
@@ -377,7 +509,8 @@
                     <h4 class="font-black text-xl uppercase tracking-tight mb-4">Direct Lines</h4>
                     <div class="space-y-6">
                       <a href="tel:07878895907" class="block text-gray-800 hover:text-prime-green text-3xl font-black transition-colors tracking-tight">07878 895907</a>
-                      <a href="tel:07472682725" class="block text-gray-800 hover:text-prime-green text-3xl font-black transition-colors tracking-tight">07472 682725</a>
+                      <div class="text-gray-600 font-bold uppercase tracking-widest text-sm">Alternative number</div>
+                      <a href="tel:07472682725" class="block text-gray-800 hover:text-prime-green text-2xl font-black transition-colors tracking-tight">07472 682725</a>
                     </div>
                   </div>
                 </div>
@@ -402,25 +535,67 @@
         </div>
       </section>
 
+      <!-- FAQ -->
+      <section class="py-28 bg-white border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-6xl font-black text-prime-black mb-6 uppercase tracking-tight">FAQ</h2>
+            <p class="text-xl text-gray-600 font-medium max-w-3xl mx-auto">Quick answers for businesses in Bolton and Greater Manchester.</p>
+          </div>
+          <div class="max-w-4xl mx-auto space-y-6">
+            <details class="group bg-slate-50 border border-gray-200 rounded-[2rem] p-8 shadow-lg">
+              <summary class="cursor-pointer list-none flex items-center justify-between font-black text-lg uppercase tracking-wider text-prime-black">
+                Do you collect from businesses only?
+                <span class="text-prime-green font-black text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div class="mt-4 text-gray-600 font-medium leading-relaxed">Yes — we focus on commercial cardboard collections for warehouses, retail stores, factories, and distribution centres.</div>
+            </details>
+            <details class="group bg-slate-50 border border-gray-200 rounded-[2rem] p-8 shadow-lg">
+              <summary class="cursor-pointer list-none flex items-center justify-between font-black text-lg uppercase tracking-wider text-prime-black">
+                Do you offer one-off collections?
+                <span class="text-prime-green font-black text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div class="mt-4 text-gray-600 font-medium leading-relaxed">Yes. We offer one-off collections and regular pickups depending on your site volume and schedule.</div>
+            </details>
+            <details class="group bg-slate-50 border border-gray-200 rounded-[2rem] p-8 shadow-lg">
+              <summary class="cursor-pointer list-none flex items-center justify-between font-black text-lg uppercase tracking-wider text-prime-black">
+                Do you collect bulk cardboard?
+                <span class="text-prime-green font-black text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div class="mt-4 text-gray-600 font-medium leading-relaxed">Yes — bulk cardboard is our focus. We handle large volumes, including baled loads and high-throughput commercial sites.</div>
+            </details>
+            <details class="group bg-slate-50 border border-gray-200 rounded-[2rem] p-8 shadow-lg">
+              <summary class="cursor-pointer list-none flex items-center justify-between font-black text-lg uppercase tracking-wider text-prime-black">
+                Which areas do you cover?
+                <span class="text-prime-green font-black text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div class="mt-4 text-gray-600 font-medium leading-relaxed">Bolton, Manchester, Bury, Wigan, Salford, Oldham, Rochdale, and surrounding North West areas.</div>
+            </details>
+          </div>
+        </div>
+      </section>
+
       <!-- Final Conversion Block -->
       <section class="py-24 bg-slate-50 border-t border-gray-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="bg-white rounded-[3rem] border border-gray-200 shadow-2xl p-12 md:p-16">
             <div class="grid lg:grid-cols-3 gap-10 items-center">
               <div class="lg:col-span-2">
-                <h2 class="text-4xl md:text-6xl font-black text-prime-black uppercase leading-[1.05] mb-6">Ready to arrange your collection?</h2>
+                <h2 class="text-4xl md:text-6xl font-black text-prime-black uppercase leading-[1.05] mb-6">Need cardboard collected from your business?</h2>
                 <p class="text-xl text-gray-600 font-medium leading-relaxed max-w-3xl">
-                  Tell us your site location and roughly how much cardboard you have. We’ll arrange a fast collection in Bolton or nearby.
+                  Fast collections for bulk cardboard across Bolton and Greater Manchester. Call now or request a quote in minutes.
                 </p>
                 <div class="mt-8 flex flex-wrap items-center gap-6">
                   <a href="tel:07878895907" class="text-2xl md:text-3xl font-black text-prime-black hover:text-prime-green transition-colors">07878 895907</a>
-                  <span class="text-gray-300 font-black">/</span>
-                  <a href="tel:07472682725" class="text-2xl md:text-3xl font-black text-prime-black hover:text-prime-green transition-colors">07472 682725</a>
+                  <div class="text-gray-500 font-bold uppercase tracking-widest text-xs">Alternative: <a href="tel:07472682725" class="hover:text-prime-green transition-colors">07472 682725</a></div>
                 </div>
                 <div class="mt-4 text-sm font-black uppercase tracking-widest text-gray-500">Serving Bolton & surrounding areas</div>
               </div>
               <div class="flex lg:justify-end">
-                <a href="tel:07878895907" class="inline-flex items-center justify-center w-full lg:w-auto bg-prime-green text-white px-12 py-6 rounded-2xl text-2xl font-black shadow-2xl hover:bg-prime-green/90 transition-all active:scale-95 uppercase tracking-widest">Call Now</a>
+                <div class="w-full lg:w-auto flex flex-col gap-4">
+                  <a href="tel:07878895907" class="inline-flex items-center justify-center w-full bg-prime-green text-white px-12 py-6 rounded-2xl text-2xl font-black shadow-2xl hover:bg-prime-green/90 transition-all active:scale-95 uppercase tracking-widest">Call Now</a>
+                  <a href="#enquiry" class="inline-flex items-center justify-center w-full bg-white text-prime-black px-12 py-6 rounded-2xl text-2xl font-black shadow-2xl border-4 border-prime-black hover:bg-prime-black hover:text-white transition-all active:scale-95 uppercase tracking-widest">Get a Quote</a>
+                </div>
               </div>
             </div>
           </div>
